@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="200dp"
+        app:alignItems="center"
+        app:flexWrap="wrap"
+        app:justifyContent="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name:"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_flexBasisPercent="50%"
+            tools:text="Name:" />
+
+        <TextView
+            android:id="@+id/landingNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_flexBasisPercent="50%"
+            tools:text="placeholder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="City:"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_flexBasisPercent="50%"
+            tools:text="City:" />
+
+        <TextView
+            android:id="@+id/landingCityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_flexBasisPercent="50%"
+            tools:text="placeholder" />
+
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#F05E54"
+            android:text="LOGOUT"
+            android:textColor="#FFF"
+            app:layout_flexBasisPercent="80%" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+</FrameLayout>
